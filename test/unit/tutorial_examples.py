@@ -357,6 +357,7 @@ class TestTutorialExamples(unittest.TestCase):
     ]
 
     tutorial_example()
+
     self.assert_equal_unordered(COMPARE_FLAGS_OUTPUT, stdout_mock.getvalue())
 
   @patch('sys.stdout', new_callable = StringIO)
